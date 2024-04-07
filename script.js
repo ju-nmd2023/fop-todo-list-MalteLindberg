@@ -29,7 +29,6 @@ window.onload = function () {
     li.appendChild(deleteButton);
     ul.appendChild(li);
   });
-  console.log(localStorage.getItem("tasks"));
 };
 
 let ul = document.getElementById("unorderedList");
@@ -77,7 +76,6 @@ function saveTasks() {
     };
   });
   localStorage.setItem("tasks", JSON.stringify(tasks));
-  console.log(localStorage.getItem("tasks"));
 }
 function markComplete(button) {
   let listItem = button.parentElement;
