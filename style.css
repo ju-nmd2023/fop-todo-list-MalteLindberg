@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #181818;
+  font-family: "Switzer", sans-serif;
+  color: #fff;
+}
+h1 {
+  margin-top: 50px;
+}
+#addItemContainer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  column-gap: 10px;
+  width: 45%;
+}
+#addItemInputTextBox {
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 0.95em;
+  transition: all 0.1s ease-in-out;
+}
+#addItemInputTextBox::placeholder {
+  font-size: small;
+}
+#addItemInputTextBox:focus {
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.35);
+  outline: none;
+}
+#addItemInputTextBox:hover {
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.35);
+}
+#addItemButton {
+  border: none;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 0.75em;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+}
+#addItemButton img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.1s ease-in-out;
+  opacity: 0.6;
+}
+#addItemButton:hover {
+  background-color: #2f2f2f;
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.35);
+}
+#addItemButton:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+#listContainer {
+  margin-top: 50px;
+  height: fit-content;
+  width: 45%;
+}
+#unorderedList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.listItem {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 1fr 0fr 0fr;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.listItem p {
+  border-radius: 5px;
+  font-size: 0.95em;
+  font-weight: 200;
+  background-color: #1f1f1f;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.markCompleteButton {
+  border: none;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 0.75em;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  transition: all 0.1s ease-in-out;
+}
+.markCompleteButton img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.1s ease-in-out;
+  opacity: 0.6;
+}
+.markCompleteButton:hover {
+  background-color: #2f2f2f;
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.35);
+}
+.markCompleteButton:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.deleteItemButton {
+  border: none;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 0.75em;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  transition: all 0.1s ease-in-out;
+}
+.deleteItemButton img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.1s ease-in-out;
+  opacity: 0.6;
+}
+.deleteItemButton:hover {
+  background-color: #2f2f2f;
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.35);
+}
+.deleteItemButton:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.completed {
+  text-decoration: line-through;
+  color: #555;
+}

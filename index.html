@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@1&display=swap" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>To do list</h1>
+    <div id="addItemContainer">
+      <input type="text" name="addItemText" id="addItemInputTextBox" placeholder="Buy groceries, do homework, clean..." />
+      <button id="addItemButton" onclick="addItem()">
+        <img src="./assets/plus.svg" alt="" />
+      </button>
+    </div>
+    <div id="listContainer">
+      <ul id="unorderedList"></ul>
+    </div>
+  </body>
+</html>
