@@ -68,6 +68,7 @@ function addItem() {
   }
 }
 function saveTasks() {
+  // array.from(...).map learned from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
   let tasks = Array.from(document.querySelectorAll(".listItem")).map((li) => {
     let pElement = li.querySelector("p");
     return {
